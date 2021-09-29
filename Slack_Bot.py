@@ -81,6 +81,10 @@ while True:
             assignment_process.join()
             # Free up memory from the instance
             os.system('pkill firefox')
+        else:
+            time.sleep(600)
+    else:
+        time.sleep(3600)
 
 
         
