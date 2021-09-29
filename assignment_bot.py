@@ -19,22 +19,19 @@ week_days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday
 def post_new_assignemnt():
     client = slack.WebClient(slack_token)
     try:
-        print('Checking for assignments')
-
+        # print('Checking for assignments')
         # Call the Populi_Bot to check for assignments
         latest_assignment_title,latest_assignemt_link = Populi_Bot.assignment_checker(username,password,options)
-        
         # Construct the message for posting
         message = f'{latest_assignment_title} --> {latest_assignemt_link}'
-        
         # Post the message
         client.chat_postMessage(channel='#general', text=message)
-
-        print('New assignment posted')
+        # print('New assignment posted')
 
     # If no new assignment was noticed
     except:
-        print('No new assignments')
+        # print('No new assignments')
+        pass
     
     
 
@@ -48,7 +45,6 @@ def post_zoom_link():
     zoom_link = Populi_Bot.todays_zoom_link(username,password,options)
     if zoom_link == None:
         return
-
     # Post the message
     message = f'Class Link: {zoom_link}'
     # print(message)

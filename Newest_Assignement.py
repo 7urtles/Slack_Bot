@@ -74,6 +74,9 @@ class Populi_Bot():
                 return title,link
 
 
+
+
+
     # Post link to class
     def todays_zoom_link(username,password,options):
         # Open the known dates file and store contents
@@ -137,6 +140,7 @@ class Populi_Bot():
             f.close()
             # Pass the homework description and link back to the Slack_Bot for posting
             return zoom_link
+
 
         
 
