@@ -1,1 +1,34 @@
+Assignment List:
+My Profile https://dfa.populiweb.com/router/contacts/people/24547156/show
+My Courses https://dfa.populiweb.com/router/user/my_course_offerings
+Directory https://dfa.populiweb.com/router/contacts/people/directory
+Dashboard https://dfa.populiweb.com/router/courseofferings/10734937/dashboard
+Syllabus https://dfa.populiweb.com/router/courseofferings/10734937/syllabus
+Lessons https://dfa.populiweb.com/router/courseofferings/10734937/lessons/index
+Files https://dfa.populiweb.com/router/courseofferings/10734937/folders/index
+Assignments https://dfa.populiweb.com/router/courseofferings/10734937/assignments/index
+Discussions https://dfa.populiweb.com/router/courseofferings/10734937/discussions/index
+
+                            Tests                                                     https://dfa.populiweb.com/router/courseofferings/10734937/assignments/tests
+Calendar https://dfa.populiweb.com/router/courseofferings/10734937/calendar
+Roster https://dfa.populiweb.com/router/courseofferings/10734937/roster
+Attendance https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363476/show
+EC: Class Activity - Free Recall/Python Application https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363815/show
+Activity 1: Psuedocode https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363477/show
+Mini Activity: Binary Process https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363773/show
+Activity 2: Binary Conversion https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363774/show
+Activity 3: Declaring Variables https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363775/show
+Activity 4: Declaring Variables https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363779/show
+Mini Activity 3 - To Do List https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363783/show
+Activity 5: List and Tuples https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363789/show
+Activity 6 - Dictionaries https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363790/show
+Activity 7 - Functions https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363791/show
+Activity 8 - Programming Logic https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363796/show
+Activity 8.1 - Functions https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363801/show
+Mini Activity 4 : While Loops https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363802/show
+Activity 9 - Functions list values https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363807/show
+Activity 9.2 - Max and min? https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363809/show
+Activity 9.1 - Sort method? https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363808/show
 Class Activity: Warmup/Review https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363811/show
+Final Exam Coding Problems https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363494/show
+Activity 11: Generating Random Lists https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363818/show
