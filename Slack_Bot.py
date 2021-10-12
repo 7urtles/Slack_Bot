@@ -25,7 +25,7 @@ def post_new_assignemnt():
         # Construct the message for posting
         message = f'{latest_assignment_title} --> {latest_assignemt_link}'
         # Post the message
-        client.chat_postMessage(channel='#general', text=message)
+        client.chat_postMessage(channel='U02DF84KNNS', text=message)
         # print('New assignment posted')
 
     # If no new assignment was noticed
@@ -48,7 +48,7 @@ def post_zoom_link():
     # Post the message
     message = f'Class Link: {zoom_link}'
     # print(message)
-    client.chat_postMessage(channel='#general', text=message)
+    client.chat_postMessage(channel='U02DF84KNNS', text=message)
 
 
 # Main loop for the app
