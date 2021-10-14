@@ -13,6 +13,7 @@ Discussions https://dfa.populiweb.com/router/courseofferings/10734937/discussion
 Calendar https://dfa.populiweb.com/router/courseofferings/10734937/calendar
 Roster https://dfa.populiweb.com/router/courseofferings/10734937/roster
 Attendance https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363476/show
+PY-111: Cumulative Final Exam https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363493/show
 EC: Class Activity - Free Recall/Python Application https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363815/show
 Activity 1: Psuedocode https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363477/show
 Mini Activity: Binary Process https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363773/show
@@ -30,7 +31,9 @@ Activity 9 - Functions list values https://dfa.populiweb.com/router/courseofferi
 Activity 9.2 - Max and min? https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363809/show
 Activity 9.1 - Sort method? https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363808/show
 Class Activity: Warmup/Review https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363811/show
-Final Exam Coding Problems https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363494/show
 Activity 11 - 11.1 https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363818/show
-PY-111: Cumulative Final Exam https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363493/show
 Activity 11.2 / 12.1 - 12.2 https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363819/show
+Activity 12.3 - 12.5 https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363822/show
+Problem: Fizzbuzz https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363826/show
+Final Exam Coding Problems https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363494/show
+Final Exam Coding Problems https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363494/show

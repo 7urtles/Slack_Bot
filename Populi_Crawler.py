@@ -1,9 +1,11 @@
+import datetime
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from time import sleep
-from datetime import date 
-
+from datetime import date, datetime
+from getpass import getpass
+import sqlite3
 
 
 # NOTE sleep times are needed to wait for page elements to load before sending next command
@@ -46,47 +48,60 @@ class Populi_Bot():
         # Close the webdriver after done using its functions
         driver.close()
         driver.quit()
-
-        # Open the known assignments file and store contents
-        f = open("Assignment_List.txt", "r")
-        assignments = f.readlines()
-        f.close()
         
+        # Grab known assignments from database
+        db = sqlite3.connect('class.db')
+        command = db.cursor()
+        db_assignments = command.execute("SELECT link FROM assignments; ").fetchall()
+        # Save (commit) the changes
+        db.commit()
+        # Close the connection
+        db.close()
+
         # For every assignment link on Populi
         for item in found_assignments:
             flag = True
-            # See if it exists in the known assignemnts file contents
-            for assignment in assignments:
+            # See if it exists in the database
+            for assignment in db_assignments:
                 title = item[0]
                 link = item[1]
                 # If it already exists, move to the next link on Populi
                 if link in assignment:
                     flag = False
                     break
-            # If a Populi assignment link is not in the file
+            # If a Populi assignment link is not in the database
             if flag == True:
                 print('Posting New Assignment')
-                # Add the new assignment to the assignments file
-                # print("Adding new assignment to file")
-                f = open("Assignment_List.txt", "a")
-                f.write(f'{title} {link}\n')
-                f.close()
+                # Writing assignment to database
+                db = sqlite3.connect('class.db')
+                command = db.cursor()
+                # Get today
+                log_day = date.today().strftime("%m/%d/%y")
+                # Get time
+                now = datetime.now()
+                log_time = now.strftime("%H:%M:%S")
+                # Insert a row of data
+                command.execute("INSERT INTO assignments VALUES (?,?,?,?)", (log_time, log_day, title, link))
+                # Save (commit) the changes
+                db.commit()
+                # Close the connection
+                db.close()
                 # Pass the homework description and link back to the Slack_Bot for posting
                 return title,link
 
 
-
-
-
     # Post link to class
     def todays_zoom_link(username,password,options):
-        # Open the known dates file and store contents
-        f = open("Class_Dates.txt", "r")
-        class_days = f.readlines()
-        f.close()
-        # Get todays date
-        today = date.today()
-        today = str(today)
+        # Grab known assignments from database
+        db = sqlite3.connect('class.db')
+        command = db.cursor()
+        class_days = command.execute("SELECT date FROM class_sessions; ").fetchall()
+        # Save (commit) the changes
+        db.commit()
+        # Close the connection
+        db.close()
+        # Get today
+        today = date.today().strftime("%m/%d/%y")
         flag = True
         # Scan the dates from the file
         for day in class_days:
@@ -127,23 +142,28 @@ class Populi_Bot():
             elem.click()
             sleep(1)
 
-            # Grab the zoom link from the popup window
+            # Grab zoom link from the popup window
             popup = driver.find_element_by_class_name("fb_popup")
             zoom_link = popup.find_element_by_partial_link_text('https://dfa.zoom.us')
             zoom_link =zoom_link.get_attribute('href')
             driver.close()
             driver.quit()
+            
+            # Writing class session data to database
+            db = sqlite3.connect('class.db')
+            command = db.cursor()
+            # Get today
+            today = date.today()
+            entry_day = date.today().strftime("%m/%d/%y")
+            # Get time
+            now = datetime.now()
+            entry_time = now.strftime("%H:%M:%S")
+            # Insert a row of data
+            command.execute("INSERT INTO class_sessions VALUES (?,?,?,?)", (entry_time, entry_day, 'title', 'https://dfa.zoom.us/j/81792173893'))
+            # Save (commit) the changes
+            db.commit()
+            # Close the connection
+            db.close()
 
-            # Add todays date to the known dates file
-            # print("Adding class date to file")
-            f = open("Class_Dates.txt", "a")
-            f.write(f'{today}\n')
-            f.close()
             # Pass the homework description and link back to the Slack_Bot for posting
             return zoom_link
-
-
-        
-
-
-        
