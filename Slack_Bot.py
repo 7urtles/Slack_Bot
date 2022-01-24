@@ -44,7 +44,7 @@ def post_zoom_link():
     # Post the message
     message = f'Class Link: {zoom_link}'
     # print(message)
-    client.chat_postMessage(channel='U02DF84KNNS', text=message)
+    client.chat_postMessage(channel='channel-code-here', text=message)
 
 
 # Main loop for the app
