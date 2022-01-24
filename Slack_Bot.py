@@ -8,8 +8,8 @@ from selenium import webdriver
 from datetime import date
 
 
-username = 'charles.parmley@codeimmersives.com'
-password = 'earthday19!@'
+username = 'your-user-name'
+password = 'your-password'
 options = webdriver.FirefoxOptions()
 options.add_argument('--headless')
 week_days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
