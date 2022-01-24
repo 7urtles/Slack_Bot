@@ -17,7 +17,7 @@ class Populi_Bot():
 
         # Navigate to assignments page
         # print("Opening Populi")
-        driver.get("https://dfa.populiweb.com/router/courseofferings/10734937/assignments/index")
+        driver.get("line-to-populi-assignments-page")
         sleep(1)
 
         # Enter username in google login form
@@ -118,7 +118,7 @@ class Populi_Bot():
 
             # Navigate to calendar page
             # print("Opening Populi")
-            driver.get("https://dfa.populiweb.com/calendar/index.php")
+            driver.get("link-to-populi-calendar-page")
             sleep(1)
 
             # Enter username in google login form
@@ -159,7 +159,7 @@ class Populi_Bot():
             now = datetime.now()
             entry_time = now.strftime("%H:%M:%S")
             # Insert a row of data
-            command.execute("INSERT INTO class_sessions VALUES (?,?,?,?)", (entry_time, entry_day, 'title', 'https://dfa.zoom.us/j/81792173893'))
+            command.execute("INSERT INTO class_sessions VALUES (?,?,?,?)", (entry_time, entry_day, 'title', 'zoom-session-link-here'))
             # Save (commit) the changes
             db.commit()
             # Close the connection
