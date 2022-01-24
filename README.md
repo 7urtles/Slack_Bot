@@ -12,3 +12,7 @@ post them in a specified group chat channel.
 
 The web scraper will continue to run and check to see if a new assignment has been posted.
 If so it will be again forwarded to the slack-bot and posted in the channel.
+
+
+Additionally provided a zoom link, the slack-bot will post that link to the group channel on
+specified days at a specified time.
