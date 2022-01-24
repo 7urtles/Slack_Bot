@@ -1,4 +1,4 @@
-slack_token = 'xoxb-2470203358324-2551145549889-kkOPq1COylop2HP7V2GDKqLA'
+slack_token = 'your-token-here'
 import slack
 from Populi_Crawler import Populi_Bot
 import multiprocessing as mp
