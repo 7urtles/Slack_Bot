@@ -25,7 +25,7 @@ def post_new_assignemnt():
         # Construct the message for posting
         message = f'{latest_assignment_title} --> {latest_assignemt_link}'
         # Post the message
-        client.chat_postMessage(channel='U02DF84KNNS', text=message)
+        client.chat_postMessage(channel='channel-code-here', text=message)
         # print('New assignment posted')
 
     # If no new assignment was noticed
