@@ -1,7 +1,7 @@
 import requests
 import os
 
-slack_token = 'your-token-here'
+slack_token = 'xoxb-2470203358324-2551145549889-SqxHu7XO3mNF5xk2uqslj6q5'
 channels = []
 
 kwargs = {
@@ -17,7 +17,6 @@ def find_user(files='', users='', user_url='', headers='', user=''):
 
 def get_data(files, users, user_url, headers, data_type):
     
-
     match data_type:
         case 'files':
             response = requests.get(files, headers=headers)
