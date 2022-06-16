@@ -1,5 +1,7 @@
 # Slack_Assignment_Bot
 
+NOTE: Included geckodriver is compiled for arm (M1 Compatable)
+
 This bot is a two part application:
 1. Web scraper
 2. Slack App (channel posts, scraper, backup)
