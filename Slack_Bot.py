@@ -66,7 +66,7 @@ class Slack_Bot():
             # If it is Monday-Thursday
             if week_day_sring != 'Friday' or week_day_sring != 'Saturday' or week_day_sring != 'Sunday':
                 # And the time is between 9pm and 4pm
-                if  current_hour_of_day >= 9 and current_hour_of_day < 22: 
+                if  current_hour_of_day: 
                     # seleniuming for the days class link
                     link_process = mp.Process(target=self.post_zoom_link())
                     # run worker in a subprocess

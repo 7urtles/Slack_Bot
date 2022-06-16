@@ -1,10 +1,19 @@
 # Slack_Assignment_Bot
 
-NOTE: Included geckodriver is compiled for arm (M1 Compatable)
+NOTES: 
+-Firefox Required
+-Included geckodriver is compiled for arm (M1 Compatable)
+-geckodriver must be copied to PATH (/usr/local/bin or maybe /usr/bin)
+	[  from a terminal inside this cloned folder:    cp geckodriver /usr/local/bin    ]
+
+
+
 
 This bot is a two part application:
 1. Web scraper
-2. Slack App (channel posts, scraper, backup)
+2. Slack App (message poster, scraper, archiver)
+
+
 
 Given login credentials for a populi student account..
 
