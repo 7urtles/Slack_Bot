@@ -1,7 +1,10 @@
 import requests
 import os
 import slack
-user_token = 'OAuth-User-Token-Here'
+from dotenv import load_dotenv
+
+load_dotenv()
+user_token = os.getenv('USER_TOKEN')
 channels = []
 
 kwargs = {

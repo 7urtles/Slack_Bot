@@ -7,9 +7,9 @@ import os
 from selenium import webdriver
 from datetime import date
 
+username = os.getenv('POPULI_EMAIL')
+password = os.getenv('POPOLI_PASSWORD')
 
-username = 'your-user-name'
-password = 'your-password'
 options = webdriver.FirefoxOptions()
 options.add_argument('--headless')
 week_days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
