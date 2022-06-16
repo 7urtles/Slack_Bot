@@ -1,16 +1,13 @@
 import datetime
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 from time import sleep
 from datetime import date, datetime
-from getpass import getpass
 import sqlite3
 
 
 # NOTE sleep times are needed to wait for page elements to load before sending next command
 class Populi_Bot():
-
     # Post new assignments
     def assignment_checker(username,password,options):
         driver = webdriver.Firefox(firefox_options=options)
