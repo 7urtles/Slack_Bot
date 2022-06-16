@@ -48,23 +48,6 @@ class Slack_Bot():
         # print(message)
         self.client.chat_postMessage(channel='channel-code-here', text=message)
 
-    def delete_messages(self):
-        # The ts of the message you want to delete
-        message_id = "12345.9876"
-        # The ID of the channel that contains the message
-        channel_id = "C12345"
-
-        try:
-            # Call the chat.chatDelete method using the built-in WebClient
-            result = self.client.chat_delete(
-                channel=channel_id,
-                ts=message_id
-            )
-            logger.info(result)
-
-        except SlackApiError as e:
-            logger.error(f"Error deleting message: {e}")
-
 
     def assignment_grabber(self):
         """
@@ -85,7 +68,7 @@ class Slack_Bot():
                 # And the time is between 9pm and 4pm
                 if  current_hour_of_day >= 9 and current_hour_of_day < 22: 
                     # seleniuming for the days class link
-                    link_process = mp.Process(target=post_zoom_link())
+                    link_process = mp.Process(target=self.post_zoom_link())
                     # run worker in a subprocess
                     link_process.start()
                     # make the main process wait for worker to end
@@ -93,7 +76,7 @@ class Slack_Bot():
                     # Free up memory from the instance
                     os.system('pkill firefox')
                     # seleniuming for new assignments
-                    assignment_process = mp.Process(target=post_new_assignemnt())
+                    assignment_process = mp.Process(target=self.post_new_assignemnt())
                     # run `worker` in a subprocess
                     assignment_process.start()
                     # make the main process wait for `worker` to end
@@ -104,7 +87,7 @@ class Slack_Bot():
                     time.sleep(600)
             else:
                 time.sleep(3600)
-                
+
 bot = Slack_Bot()
 bot.assignment_grabber()
 

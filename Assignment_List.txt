@@ -9,7 +9,8 @@ Files https://dfa.populiweb.com/router/courseofferings/10734937/folders/index
 Assignments https://dfa.populiweb.com/router/courseofferings/10734937/assignments/index
 Discussions https://dfa.populiweb.com/router/courseofferings/10734937/discussions/index
 
-                            Tests                                                     https://dfa.populiweb.com/router/courseofferings/10734937/assignments/tests
+Tests:
+https://dfa.populiweb.com/router/courseofferings/10734937/assignments/tests
 Calendar https://dfa.populiweb.com/router/courseofferings/10734937/calendar
 Roster https://dfa.populiweb.com/router/courseofferings/10734937/roster
 Attendance https://dfa.populiweb.com/router/courseofferings/10734937/assignments/22363476/show
