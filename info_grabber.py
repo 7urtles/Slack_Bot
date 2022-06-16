@@ -1,19 +1,19 @@
 import requests
 import os
 import slack
-slack_token = 'your-token-here'
+user_token = 'OAuth-User-Token-Here'
 channels = []
 
 kwargs = {
     'files':'https://slack.com/api/files.list',
     'users':'https://slack.com/api/users.list',
     'user_url':'https://slack.com/api/users.info',
-    'headers':{'Authorization': 'Bearer %s' % slack_token}
+    'headers':{'Authorization': 'Bearer %s' % user_token}
 }
 
 class DataGrabber():
     def __init__(self) -> None:
-        self.client = slack.WebClient(slack_token)
+        self.client = slack.WebClient(user_token)
         pass
 
     def find_user(self, files='', users='', user_url='', headers='', user=''):
