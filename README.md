@@ -2,7 +2,7 @@
 
 This bot is a two part application:
 1. Web scraper
-2. Slack chat bot
+2. Slack App (channel posts, scraper, backup)
 
 Given login credentials for a populi student account..
 
@@ -14,5 +14,9 @@ The web scraper will continue to run and check to see if a new assignment has be
 If so the assignment name and link will again be forwarded to the slack-bot and posted in the channel.
 
 
-Additionally provided a zoom link, the slack-bot will post that link to the group channel on
-specified days at a specified time.
+Slack_Bot can:
+ - Post to channels at specific times
+ - Scrape user/channel/chat data from slacks api
+ - Backup any found data to a db
+ - Delete user chats & messages
+
