@@ -104,7 +104,9 @@ class Slack_Bot():
                     time.sleep(600)
             else:
                 time.sleep(3600)
-
+                
+bot = Slack_Bot()
+bot.assignment_grabber()
 
         
     
